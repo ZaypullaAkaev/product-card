@@ -1,2 +1,1 @@
-# product-card
-The first time, the first try, the first cry...
+# Six hours later...Проект создан
