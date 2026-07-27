@@ -1,5 +1,5 @@
 * {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,6 +9,10 @@ body {
   color: #515076;
   font-size: 13px;
   line-height: 18px;
+  background-color: #FFFFFF;
+  background-image: url("img/textured-imitation.png");
+  background-repeat: no-repeat;
+  background-position: 326px 0px;
 }
 
 .title {
@@ -16,21 +20,24 @@ body {
   font-size: 70px;
   font-weight: 400;
   line-height: 78px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 220px;
+  margin-bottom: 40px;
 }
 
 .product {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
+  width: 1110px;
+  margin: 0 auto;
 }
 
 .product-list {
   width: 340px;
   height: 573px;
-  background-color: #F5F5F5;
-  list-style: none;
+  background-color: #f1f1f7;
+  list-style-type: none;
   padding: 25px;
   margin: 10px;
 }
@@ -58,6 +65,10 @@ body {
   margin-bottom: 15px;
 }
 
+.compound {
+list-style-position: inside;
+}
+
 .compound-list {
   margin-top: 5px;
   margin-left: 20px;
@@ -67,4 +78,6 @@ body {
 .price {
   font-size: 20px;
   line-height: 24px;
+  display: flex;
+  justify-content: space-between;
 }
