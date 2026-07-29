@@ -10,7 +10,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   background-color: #FFFFFF;
-  background-image: url("img/textured-imitation.png");
+  background-image: url("img/bg.png");
   background-repeat: no-repeat;
   background-position: 326px 0px;
 }
@@ -66,12 +66,12 @@ body {
 }
 
 .compound {
-list-style-position: inside;
+  list-style-position: inside;
 }
 
 .compound-list {
   margin-top: 5px;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-bottom: 30px;
 }
 
