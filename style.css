@@ -18,7 +18,6 @@ body {
 
 .container {
   width: 1280px;
-  height: 1715px;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -98,4 +97,25 @@ body {
 .products__item {
   width: 340px;
   height: 573px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #515076;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  background-color: goldenrod;
+}
+
+.active {
+  background-color: black;
 }
