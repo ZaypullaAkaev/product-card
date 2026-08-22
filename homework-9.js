@@ -8,25 +8,25 @@ console.log(halfNumbers);
 
 // №3 created an array of strings and checked for the presence/absence of something
 const mostPopularLanguages = ['English', 'Chinese', 'Hindi', 'Spanish', 'Arabic'];
-const findLanguage = mostPopularLanguages.includes('Hindi');
-const findMyLanguage = mostPopularLanguages.includes('Russian');
+const includesLanguage = mostPopularLanguages.includes('Hindi');
+const includesMyLanguage = mostPopularLanguages.includes('Russian');
 
-console.log(findLanguage);
-console.log(findMyLanguage);
+console.log(includesLanguage);
+console.log(includesMyLanguage);
 
 // №4 wrote a function using the "reverse" method
 function reverseArray(array) {
   return array.reverse();
 }
 
-numbers.reverse();
-mostPopularLanguages.reverse();
+reverseArray(numbers);
+reverseArray(mostPopularLanguages);
 
 console.log(numbers);
 console.log(mostPopularLanguages);
 
 // №6 imported constant
-commentsLatinChat;
+console.log(commentsLatinChat);
 
 // №7 display user emails from ".com"
 const checkMail = commentsLatinChat.filter((mail) => mail.email.includes('.com'));
