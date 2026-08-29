@@ -4,10 +4,11 @@ console.log(products);
 
 const productTemplate = document.querySelector('.product-template');
 const productList = document.querySelector('.products');
+const imagesPath = 'img/';
 
 function createCard(product) {
   const productClone = productTemplate.content.cloneNode(true);
-  productClone.querySelector('.card__image').src = product.image;
+  productClone.querySelector('.card__image').src = `${imagesPath}${product.image}`;
   productClone.querySelector('.card__image').alt = product.name;
   productClone.querySelector('.card__category').textContent = product.category;
   productClone.querySelector('.card__name').textContent = product.name;
