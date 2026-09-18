@@ -17,6 +17,7 @@
       <button class="button btn-open-google">Открыть страницу Google.com</button>
       <button class="button btn-output-console-log">Вывести сообщение в консоль лог</button>
       <button class="button btn-toggle">Switch the color</button>
+      <button class="button" id="registrationBtn">Регистрация</button>
 
       <ul class="products clear-list"></ul>
 
@@ -43,10 +44,99 @@
         </li>
       </template>
     </div>
+
+    <div id="registrationModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModalBtn">&#x2716;</span>
+        <h2>Регистрация</h2>
+        <form class="registration-form">
+          <div>
+            <label for="userName">Имя:</label>
+            <input type="text" id="userName" name="userName" placeholder="Зайпулла" required />
+          </div>
+          <div>
+            <label for="userSurname">Фамилия:</label>
+            <input type="text" id="userSurname" name="userSurname" placeholder="Акаев" required />
+          </div>
+          <div>
+            <label for="userAge">Возраст:</label>
+            <input type="number" id="userAge" name="userAge" placeholder="18" min="14" max="100" step="1" required />
+          </div>
+          <div>
+            <label for="userBirthday">День рождения:</label>
+            <input type="date" id="userBirthday" name="userBirthday" required />
+          </div>
+          <div>
+            <label for="userLogin">Логин:</label>
+            <input type="email" id="userLogin" name="userLogin" minlength="8" required />
+          </div>
+          <div>
+            <label for="userPassword">Пароль:</label>
+            <input
+              type="password"
+              id="userPassword"
+              name="userPassword"
+              placeholder="••••••••"
+              minlength="8"
+              maxlength="8"
+              required />
+          </div>
+          <div>
+            <label for="userConfirmPassword">Подтвердите пароль:</label>
+            <input
+              type="password"
+              id="userConfirmPassword"
+              name="userConfirmPassword"
+              placeholder="••••••••"
+              minlength="8"
+              maxlength="8"
+              required />
+          </div>
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="block">
+        <div class="block__elem1">
+          <h3>Product Cards</h3>
+          <p>У нас самые лучшие продукты для кожи!</p>
+          <a href="#" class="icon">tg</a>
+          <a href="#" class="icon">vk</a>
+        </div>
+
+        <div class="block__elem2">
+          <form class="footer-form">
+            <label for="user-email">Подпишись на наши акции:</label>
+            <div class="input-group">
+              <input type="email" id="user-email" name="email" placeholder="Введи Email..." required />
+              <button type="submit">Подписаться</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="block__elem3">
+          <p>Быстрые ссылки</p>
+          <nav>
+            <ul>
+              <a href="#" class="links">Главная</a>
+              <a href="#" class="links">Магазин</a>
+              <a href="#" class="links">Контакты</a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">www.product-cards.com &copy; all right reserve</p>
+      </div>
+    </footer>
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>
     <script type="module" src="homework-9.js"></script>
     <script type="module" src="homework-10.js"></script>
+    <script type="module" src="homework-11.js"></script>
   </body>
 </html>
