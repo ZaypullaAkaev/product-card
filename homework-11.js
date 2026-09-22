@@ -37,7 +37,7 @@ registrForm.addEventListener('submit', function (event) {
     return;
   }
 
-  const newUser = {
+  const user = {
     userName: document.getElementById('userName').value,
     userSurname: document.getElementById('userSurname').value,
     userAge: document.getElementById('userAge').value,
@@ -45,8 +45,6 @@ registrForm.addEventListener('submit', function (event) {
     userLogin: document.getElementById('userLogin').value,
     createOn: new Date(),
   };
-
-  user = newUser;
 
   console.log('Вы зарегистрировались!', user);
 
