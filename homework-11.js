@@ -1,3 +1,6 @@
+import {Modal} from './modal.js';
+import {Form} from './form.js';
+
 const footerForm = document.querySelector('.footer-form');
 footerForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -11,44 +14,40 @@ footerForm.addEventListener('submit', (event) => {
 
 let user = null;
 
-const modal = document.getElementById('registrationModal');
-const openBtn = document.getElementById('registrationBtn');
-const closeBtn = document.getElementById('closeModalBtn');
+const registrationModal = new Modal('registrationModal');
+const registrationForm = new Form('registrationForm');
 
-const registrForm = document.querySelector('.registration-form');
+const openBtn = document.getElementById('registrationBtn');
 
 openBtn.addEventListener('click', function () {
-  modal.classList.add('modal-showed');
+  registrationModal.open();
 });
 
-closeBtn.addEventListener('click', function () {
-  modal.classList.remove('modal-showed');
-});
+if (registrationForm.form) {
+  registrationForm.form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const values = registrationForm.getValues();
+    const isPasswordMatch = values.userPassword === values.userConfirmPassword;
 
-registrForm.addEventListener('submit', function (event) {
-  event.preventDefault();
+    if (!registrationForm.isValid() || !isPasswordMatch) {
+      console.log('Регистрация отклонена!');
+      alert('Ошибка! Проверьте правильность заполнения полей.');
+      return;
+    }
 
-  const pass = document.getElementById('userPassword').value;
-  const confirmPass = document.getElementById('userConfirmPassword').value;
+    user = {
+      userName: values.userName,
+      userSurname: values.userSurname,
+      userAge: values.userAge,
+      userBirthday: values.userBirthday,
+      userLogin: values.userLogin,
+      createOn: new Date(),
+    };
 
-  if (!registrForm.checkValidity() || pass !== confirmPass) {
-    console.log('Регистрация отклонена!');
-    alert('Ошибка! Проверьте правильность заполнения полей.');
-    return;
-  }
+    console.log('Вы зарегистрировались!', user);
 
-  const user = {
-    userName: document.getElementById('userName').value,
-    userSurname: document.getElementById('userSurname').value,
-    userAge: document.getElementById('userAge').value,
-    userBirthday: document.getElementById('userBirthday').value,
-    userLogin: document.getElementById('userLogin').value,
-    createOn: new Date(),
-  };
+    registrationModal.close();
 
-  console.log('Вы зарегистрировались!', user);
-
-  modal.classList.remove('modal-showed');
-
-  registrForm.reset();
-});
+    registrationForm.reset();
+  });
+}
