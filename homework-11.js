@@ -26,14 +26,14 @@ openBtn.addEventListener('click', function () {
 if (registrationForm.form) {
   registrationForm.form.addEventListener('submit', function (event) {
     event.preventDefault();
-    const values = registrationForm.getValues();
-    const isPasswordMatch = values.userPassword === values.userConfirmPassword;
 
-    if (!registrationForm.isValid() || !isPasswordMatch) {
+    if (!registrationForm.isValid('userPassword', 'userConfirmPassword')) {
       console.log('Регистрация отклонена!');
       alert('Ошибка! Проверьте правильность заполнения полей.');
       return;
     }
+
+    const values = registrationForm.getValues();
 
     user = {
       userName: values.userName,

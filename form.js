@@ -12,8 +12,17 @@ export class Form {
     return values;
   }
 
-  isValid() {
-    return this.form ? this.form.checkValidity() : false;
+  isValid(passwordName, confirmPasswordName) {
+    const isHtmlValid = this.form.checkValidity();
+    if (passwordName && confirmPasswordName) {
+      const values = this.getValues();
+      const password = values[passwordName];
+      const confirmPassword = values[confirmPasswordName];
+
+      return isHtmlValid && password === confirmPassword;
+    }
+
+    return isHtmlValid;
   }
 
   reset() {
