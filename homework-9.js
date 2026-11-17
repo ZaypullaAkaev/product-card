@@ -4,15 +4,15 @@ import {commentsLatinChat} from './comments.js';
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const halfNumbers = numbers.filter((number) => number >= 5);
 
-console.log(halfNumbers);
+// console.log(halfNumbers);
 
 // №3 created an array of strings and checked for the presence/absence of something
 const mostPopularLanguages = ['English', 'Chinese', 'Hindi', 'Spanish', 'Arabic'];
 const includesLanguage = mostPopularLanguages.includes('Hindi');
 const includesMyLanguage = mostPopularLanguages.includes('Russian');
 
-console.log(includesLanguage);
-console.log(includesMyLanguage);
+// console.log(includesLanguage);
+// console.log(includesMyLanguage);
 
 // №4 wrote a function using the "reverse" method
 function reverseArray(array) {
@@ -22,16 +22,16 @@ function reverseArray(array) {
 reverseArray(numbers);
 reverseArray(mostPopularLanguages);
 
-console.log(numbers);
-console.log(mostPopularLanguages);
+// console.log(numbers);
+// console.log(mostPopularLanguages);
 
 // №6 imported constant
-console.log(commentsLatinChat);
+// console.log(commentsLatinChat);
 
 // №7 display user emails from ".com"
 const checkMail = commentsLatinChat.filter((mail) => mail.email.includes('.com'));
 
-console.log(checkMail);
+// console.log(checkMail);
 
 // №8 reprocessed the array
 const sortedByID = commentsLatinChat.map((showObject) => {
@@ -41,12 +41,12 @@ const sortedByID = commentsLatinChat.map((showObject) => {
   };
 });
 
-console.log(sortedByID);
+// console.log(sortedByID);
 
 // №9 created an array where the objects consisted only of an ID and a name
 const shortArray = commentsLatinChat.map((object) => ({name: object.name, id: object.id}));
 
-console.log(shortArray);
+// console.log(shortArray);
 
 // №10 add the isInvalid property to objects
 const newProperty = commentsLatinChat.map(function isInvalid(commentsLatinChat) {
@@ -56,7 +56,7 @@ const newProperty = commentsLatinChat.map(function isInvalid(commentsLatinChat) 
   };
 });
 
-console.log(newProperty);
+// console.log(newProperty);
 
 // №11 array method 'reduce'
 const showEmailsUsingReduce = commentsLatinChat.reduce((acc, object) => {
@@ -65,12 +65,12 @@ const showEmailsUsingReduce = commentsLatinChat.reduce((acc, object) => {
 
 const showEmailsUsingMap = commentsLatinChat.map((object) => object.email);
 
-console.log(showEmailsUsingReduce);
-console.log(showEmailsUsingMap);
+// console.log(showEmailsUsingReduce);
+// console.log(showEmailsUsingMap);
 
 // №12 array method toString and join
 const methodToString = showEmailsUsingMap.toString();
 const methodJoin = showEmailsUsingMap.join();
 
-console.log(methodToString);
-console.log(methodJoin);
+// console.log(methodToString);
+// console.log(methodJoin);

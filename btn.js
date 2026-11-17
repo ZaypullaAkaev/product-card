@@ -33,13 +33,13 @@ const btnOutputConsoleLog = document.querySelector(".btn-output-console-log");
 
 btnOutputConsoleLog.addEventListener("click", () => outputConsoleLog("Сообщение выведено в консоль лог"));
 function outputConsoleLog(message) {
-  console.log(message);
+  // console.log(message);
 }
 
 const titleElement = document.querySelector(".title");
 
 titleElement.addEventListener("mouseover", function () {
-  console.log(titleElement.textContent);
+  // console.log(titleElement.textContent);
 });
 
 const btnToggle = document.querySelector(".btn-toggle");
