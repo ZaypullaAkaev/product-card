@@ -160,11 +160,11 @@ class Cafe {
 }
 
 const cafe = new Cafe('Бриз', 'Каспийск');
-console.log(cafe.getInfoCafe());
+// console.log(cafe.getInfoCafe());
 
 const coffee = new Coffee('Айс-Латте', 400, 300, 7, 'Арабика Эфиопия', 'Овсяное молоко', 'Средняя');
 
-coffee.addSyrup('Карамель');
-coffee.addSugar(2);
-cafe.orderDrink(coffee);
-console.log(coffee.getInfoDrink());
+// coffee.addSyrup('Карамель');
+// coffee.addSugar(2);
+// cafe.orderDrink(coffee);
+// console.log(coffee.getInfoDrink());
