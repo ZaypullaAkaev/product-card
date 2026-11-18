@@ -1,6 +1,6 @@
 import {products} from './products.js';
 
-console.log(products);
+// console.log(products);
 
 const productTemplate = document.querySelector('.product-template');
 const productList = document.querySelector('.products');
@@ -48,7 +48,7 @@ function init() {
   renderProducts(products, countToDisplay);
 }
 
-init();
+// init();
 
 const showByMethodReduce = products.reduce((acc, product) => {
   const partProducts = {[product.name]: product.description};
@@ -56,4 +56,4 @@ const showByMethodReduce = products.reduce((acc, product) => {
   return acc;
 }, []);
 
-console.log(showByMethodReduce);
+// console.log(showByMethodReduce);

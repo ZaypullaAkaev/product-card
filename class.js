@@ -14,20 +14,20 @@ class GothamCitizen {
   }
 }
 
-// class Batman extends GothamCitizen {
-//   constructor() {
-//     super('Бэтмен (Брюс Уэйн)', 'Черныe бэт-шмотки с плащом стиля угольной летучей мыши');
-//     this.stealthLevel = 90;
-//   }
+class Batman extends GothamCitizen {
+  constructor() {
+    super('Бэтмен (Брюс Уэйн)', 'Черныe бэт-шмотки с плащом стиля угольной летучей мыши');
+    this.stealthLevel = 90;
+  }
 
-//   hideInShadows() {
-//     return `${this.name} бесшумно пикирует и растворяется в кромешной тьме. Скрытность: ${this.stealthLevel}%`;
-//   }
+  hideInShadows() {
+    return `${this.name} бесшумно пикирует и растворяется в кромешной тьме. Скрытность: ${this.stealthLevel}%`;
+  }
 
-//   callAlfred() {
-//     return `${this.name}: "Альфред, подготовь бэтмобиль и завари чай каркаде. Сегодня была суета."`;
-//   }
-// }
+  callAlfred() {
+    return `${this.name}: "Альфред, подготовь бэтмобиль и завари чай каркаде. Сегодня была суета."`;
+  }
+}
 
 class Joker extends GothamCitizen {
   constructor() {
@@ -70,19 +70,19 @@ const batman = new Batman();
 const joker = new Joker();
 const harvey = new TwoFace();
 
-console.log(batman.dramaticEntrance());
-console.log(joker.dramaticEntrance());
-console.log(harvey.dramaticEntrance());
+// console.log(batman.dramaticEntrance());
+// console.log(joker.dramaticEntrance());
+// console.log(harvey.dramaticEntrance());
 
-console.log(batman.deliverMonologue('Вернуть порядок в этом прогнившем городе легче, чем понять, как надо делать дз'));
-console.log(joker.deliverMonologue('Навести суету в Готэме намного проще чем сделать мучительно-сложное дз'));
-console.log(harvey.deliverMonologue('Слушай меня, Готэм: наши дз наполовину сложные, наполовину труднодогоняемые'));
+// console.log(batman.deliverMonologue('Вернуть порядок в этом прогнившем городе легче, чем понять, как надо делать дз'));
+// console.log(joker.deliverMonologue('Навести суету в Готэме намного проще чем сделать мучительно-сложное дз'));
+// console.log(harvey.deliverMonologue('Слушай меня, Готэм: наши дз наполовину сложные, наполовину труднодогоняемые'));
 
-console.log(batman.hideInShadows());
-console.log(batman.callAlfred());
+// console.log(batman.hideInShadows());
+// console.log(batman.callAlfred());
 
-console.log(joker.createChaos());
-console.log(joker.tellJoke());
+// console.log(joker.createChaos());
+// console.log(joker.tellJoke());
 
-console.log(harvey.bribingJudge());
-console.log(harvey.flipCoin());
+// console.log(harvey.bribingJudge());
+// console.log(harvey.flipCoin());

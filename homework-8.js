@@ -11,7 +11,7 @@ const myUserInfo = {
   job: 'woodworker',
 };
 
-console.log(myUserInfo);
+// console.log(myUserInfo);
 
 // 4- created car data object
 const carData = {
@@ -28,7 +28,7 @@ const carData = {
 
 carData.owner = myUserInfo;
 
-console.log(carData);
+// console.log(carData);
 
 // 5 - added function topSpeed
 function checkTopSpeed(carData) {
@@ -39,21 +39,21 @@ function checkTopSpeed(carData) {
   }
 }
 
-checkTopSpeed(carData);
+// checkTopSpeed(carData);
 
 // 6 - added the function showProperty
 function showProperty(carData, any) {
   console.log(carData[any]);
 }
 
-showProperty(carData, 'make');
+// showProperty(carData, 'make');
 
 // 7 - created arrays with product names
 const winnersLC = ['Real Madrid', 'PSG', 'Chelsea', 'Manchester City', 'Liverpool'];
 const mostVenomousSnakes = ['Inland taipan', 'Belchers sea snake', 'Black mamba', 'King cobra'];
 
-console.log(winnersLC);
-console.log(mostVenomousSnakes);
+// console.log(winnersLC);
+// console.log(mostVenomousSnakes);
 
 // 8 - created array consisting of objects
 const samsung = {
@@ -94,13 +94,13 @@ const honor = {
 
 const bestPhones = [samsung, iPhone, vivo, honor];
 
-console.log(bestPhones);
+// console.log(bestPhones);
 
 // 9 - created a specific array
 const chinesePhones = [vivo, honor];
 const allPhones = [...bestPhones, ...chinesePhones];
 
-console.log(allPhones);
+// console.log(allPhones);
 
 // 10 - created with the array method — map
 const newMethod = allPhones.map(function isTopBattery(allPhones) {
