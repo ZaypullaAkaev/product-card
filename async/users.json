@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Джон",
+      "surname": "Уик",
+      "email": "babayaga@continental.hotel",
+      "age": 45,
+      "universe": "Джон Уик",
+      "weapon": "Пистолет и карандаш",
+      "isWorthWatching": true
+    },
+    {
+      "id": 2,
+      "name": "Доминик",
+      "surname": "Торетто",
+      "email": "dominik@family.com",
+      "age": 46,
+      "universe": "Форсаж",
+      "weapon": "Dodge Charger и сила семьи",
+      "isWorthWatching": true
+    },
+    {
+      "id": 3,
+      "name": "Кевин",
+      "surname": "Маккалистер",
+      "email": "kevin@stayed.home",
+      "age": 10,
+      "universe": "Один дома",
+      "weapon": "Утюг, банки с краской и паяльная лампа",
+      "isWorthWatching": true
+    },
+    {
+      "id": 4,
+      "name": "Питер",
+      "surname": "Паркер",
+      "email": "spiderman@daily.fly",
+      "age": 21,
+      "universe": "Marvel (Человек-паук)",
+      "weapon": "Веб-шутеры с паутиной",
+      "isWorthWatching": true
+    },
+    {
+      "id": 5,
+      "name": "Джеки",
+      "surname": "Чан",
+      "email": "jackie@master.off",
+      "age": 50,
+      "universe": "Боевики с Джеки Чаном",
+      "weapon": "Стремянка, стул и всё, что попадётся под руку",
+      "isWorthWatching": true
+    },
+    {
+      "id": 6,
+      "name": "Панда",
+      "surname": "По",
+      "email": "dragon@aaay.com",
+      "age": 22,
+      "universe": "Кунг-фу Панда",
+      "weapon": "Пельмешки и пальцевый захват Уси",
+      "isWorthWatching": true
+    }
+  ]
+}
