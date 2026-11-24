@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete-cards {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn-get-cards {
+  background-color: #3498db;
+  color: white;
+}
+
+.message-style {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.message-style.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  margin-bottom: 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 260px;
+  background-color: rgb(247, 233, 209);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+}
+
+.card p {
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+.btn-delete-card {
+  margin-top: 12px;
+  padding: 8px;
+  background-color: #8bf106;
+  color: #333;
+  border: 1px solid #f5c2c7;
+  border-radius: 5px;
+  cursor: pointer;
+}
