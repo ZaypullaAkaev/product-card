@@ -1,13 +1,12 @@
-const deleteAllBtn = document.querySelector('.btn-delete-cards');
-const getAllBtn = document.querySelector('.btn-get-cards');
-const messageBox = document.querySelector('.message');
-const statusMessage = document.getElementById('status-message');
-const cardsContainer = document.querySelector('.cards-container');
+const deleteAllBtn = document.querySelector('#btn-delete-cards');
+const getAllBtn = document.querySelector('#btn-get-cards');
+const messageBox = document.querySelector('#message');
+const statusMessage = document.querySelector('#status-message');
+const cardsContainer = document.querySelector('#users-card-container');
 
 const STORAGE_KEY = 'users';
 
-const storedUsers = localStorage.getItem(STORAGE_KEY);
-let users = storedUsers ? JSON.parse(storedUsers) : [];
+let users = JSON.parse(localStorage.getItem(STORAGE_KEY) || []);
 
 function showMessage(text, isCenter = false) {
   statusMessage.textContent = text;
@@ -112,7 +111,7 @@ getAllBtn.addEventListener('click', async () => {
   }
 });
 
-if (storedUsers !== null && users.length > 0) {
+if (users !== null && users.length > 0) {
   renderUsers(users);
 } else {
   fetchUsers();

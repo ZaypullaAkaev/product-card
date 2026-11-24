@@ -8,15 +8,15 @@
   </head>
   <body>
     <header class="top">
-      <button class="button btn-delete-cards">Удалить все карточки</button>
-      <button class="button btn-get-cards">Получить все карточки</button>
+      <button id="btn-delete-cards" class="button btn-delete-cards">Удалить все карточки</button>
+      <button id="btn-get-cards" class="button btn-get-cards">Получить все карточки</button>
     </header>
 
-    <div id="message" class="message">
+    <div id="message" class="message-style">
       <p id="status-message"></p>
     </div>
 
-    <div class="cards-container"></div>
+    <div id="users-card-container" class="cards-container"></div>
 
     <script type="module" src="async.js"></script>
   </body>
